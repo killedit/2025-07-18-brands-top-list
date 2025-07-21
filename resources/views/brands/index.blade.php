@@ -4,11 +4,13 @@
     <header class="fixed top-0 left-0 w-full bg-white border-b border-gray-300 shadow-sm z-50">
         <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
             <h1 class="text-2xl font-bold">🪙 Top Brands List in {{ $country }}</h1>
-            <div class="flex space-x-3">
-            <a href="{{ route('login') }}" class="bg-white hover:bg-gray-100 border border-gray-400 text-black px-4 py-2 rounded text-sm hover:bg-blue-700">Login</a>
-            <a href="{{ route('register') }}" class="bg-white hover:bg-gray-100 border border-gray-400 text-black px-4 py-2 rounded text-sm hover:bg-blue-700">Register</a>
-
-
+            <div class="flex space-x-4">
+                <button onclick="alert('This project was intended to allow login and registration to manage brands, but this functionality is only available for testing via Postman.')" class="bg-white border border-gray-400 text-black px-4 py-2 rounded text-sm hover:bg-gray-100 hover:text-blue-700">
+                    Login
+                </button>
+                <button onclick="alert('This project was intended to allow login and registration to manage brands, but this functionality is only available for testing via Postman.')" class="bg-white border border-gray-400 text-black px-4 py-2 rounded text-sm hover:bg-gray-100 hover:text-blue-700">
+                    Register
+                </button>
             </div>
         </div>
     </header>
