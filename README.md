@@ -1,4 +1,4 @@
-# RESTful API to manage brands top list.
+# RESTful API to manage top list of brands.
 
 ## Installation
 /It has been tested in the process of writing the documentation./
@@ -20,11 +20,9 @@
     docker compose up -d --build
     ```
 
-3. DB migrations and seeding are handled in the entry point bash script.
+3. DB migrations and seeding are handled by the entrypoint bash script `2025-07-18-brands-top-list/docker/php/entrypoint.sh`.
 
-    `docker/php/entrypoint.sh`
-
-4. Check if db tables are created.
+4. Check if db tables are created and populated.
 
     <u>Option 1:</u> Attach to MySQL container.
 
@@ -37,14 +35,14 @@
         exit;
     ```
     
-    <u>Option 2:</u> Create a new database connection in DBeaver.
+    <u>Option 2:</u> Create a new db connection in DBeaver.
 
     ```
-    Server Host:    localhost</br>
-    Port:           3307</br>
-    Database:       brands_top_list</br>
-    Username:       btl_user</br>
-    Password:       btl_password</br>
+    Server Host:    localhost
+    Port:           3307
+    Database:       brands_top_list
+    Username:       btl_user
+    Password:       btl_password
 
     Test Connection...
     ```
@@ -64,10 +62,17 @@
 
 User | Operation
 --|--
-Guest | Only view top list based on `CF-IPCountry`.
+Guest | Only view top list based on `CF-IPCountry`. Postman collection was used for tests. Defaults to BG.
 Authenticated | Possibility to create/read/update/delete brands.</br><em>Authentication and requests are kept simple, but should be securited with email verification, 2FA, tokens, expiration, encryption, request signatures to ensure data protection.</em>
 
 ## Endpoints
+Method | Controller | Description
+--|--|--
+GET | BrandController@show | List all brands.
+To be developed: | |
+POST | BrandController@store | Create a new brand.
+PUT | BrandController@update | Update an existing brand.
+DELETE | BrandController@destroy | Delete an existing brand.
 
 
 

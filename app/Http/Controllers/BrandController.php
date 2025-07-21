@@ -28,4 +28,10 @@ class BrandController extends Controller
             'country' => $countryCode,
         ]);
     }
+
+    public function show(Request $request)
+    {
+        $brands = Brand::all();
+        return response()->json($brands);
+    }
 }

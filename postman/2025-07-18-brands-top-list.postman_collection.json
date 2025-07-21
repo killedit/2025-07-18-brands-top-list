@@ -30,6 +30,36 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "ListBrands",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/brands",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"brands"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
