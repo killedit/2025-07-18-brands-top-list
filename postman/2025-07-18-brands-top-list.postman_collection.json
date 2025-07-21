@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "72df627d-6fa3-4c85-a79a-e6c82d2a0922",
+		"name": "2025-07-18-brands-top-list",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31613656"
+	},
+	"item": [
+		{
+			"name": "CF-IPCountry-Header",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "CF-IPCountry",
+						"value": "US",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
