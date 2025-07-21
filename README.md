@@ -54,10 +54,8 @@
 <em>Currently only back-end endpoints are partly implemented.</em></br>
 <em>7. To add or edit/delete records login as `Test User` or create your own.</em>:
 
-    ```
     Email:      test@example.com
     Password:   test
-    ```
 
 ## Logic behind the application
 
