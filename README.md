@@ -14,15 +14,15 @@
     cd 2025-07-18-brands-top-list
     ```
 
-2. Build the containers. Check for errors, i.e. a port could be in use by another process.
+3. Build the containers. Check for errors, i.e. a port could be in use by another process.
 
     ```
     docker compose up -d --build
     ```
 
-3. DB migrations and seeding are handled by the entrypoint bash script `2025-07-18-brands-top-list/docker/php/entrypoint.sh`.
+4. DB migrations and seeding are handled by the entrypoint bash script `2025-07-18-brands-top-list/docker/php/entrypoint.sh`.
 
-4. Check if db tables are created and populated.
+5. Check if db tables are created and populated.
 
     <u>Option 1:</u> Attach to MySQL container.
 
@@ -47,11 +47,12 @@
     Test Connection...
     ```
 
-5. Load the application.
+6. Load the application.
 
     http://localhost:8081/
 
-6. To edit records login as `Test User` or create your own, i.e. <em>Register</em>:
+<em>Currently only back-end endpoints are partly implemented.</em></br>
+<em>7. To add or edit/delete records login as `Test User` or create your own.</em>:
 
     ```
     Email:      test@example.com
